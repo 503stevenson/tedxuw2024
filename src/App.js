@@ -19,6 +19,7 @@ function App() {
   ReactGA.initialize('8569432655');
   const [isOpen, setIsOpen] = useState(false);
 
+  
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
