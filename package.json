@@ -41,9 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1",
-    "homepage": "https://tedxuw-website.github.io/tedxuw2024.github.io"
   }
 }
