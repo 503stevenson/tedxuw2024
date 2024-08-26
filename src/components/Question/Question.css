@@ -38,7 +38,8 @@
 }
 
 .qanda.open .answer {
-    padding: 0 5px;
+    padding-left: 5px;
+    padding-right: 35px;
     display: block;
     color: #FFF;
     font-family: Inter;
@@ -46,4 +47,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.qanda.open .answer ul li {
+    margin-bottom: 10px;
 }

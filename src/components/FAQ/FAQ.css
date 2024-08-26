@@ -29,5 +29,13 @@
 .faq-content .questions {
     margin-top: 50px;
     margin-bottom: 50px;
+
     width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .faq-content .questions .qanda {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
