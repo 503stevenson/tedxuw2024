@@ -17,6 +17,14 @@ import faq_star from './FAQ-Star.svg'
 import faq1 from './tedx_faq_q1.png'
 import faq2 from './tedx_faq_q2.png'
 import faq3 from './tedx_faq_q3.png'
+import AEF from './sponsor_AEF.png'
+import bullfrogpowered from './sponsor_bullfrogpowered.png'
+import CIGI from './sponsor_CIGI.png'
+import Extempra from './sponsor_Extempra.svg'
+import WUSA from  './WUSA_sponsor.png'
+import plat_star from './sponsor_plat_single_star.svg'
+import gold_stars from './sponsor_gold_star_trio.svg'
+import silver_stars from './sponsor_silver_star_duo.svg'
 
 export { 
     Moon, 
@@ -37,5 +45,13 @@ export {
     faq_star,
     faq1,
     faq2,
-    faq3
+    faq3,
+    AEF,
+    bullfrogpowered,
+    CIGI,
+    Extempra,
+    WUSA,
+    plat_star,
+    gold_stars,
+    silver_stars
 }

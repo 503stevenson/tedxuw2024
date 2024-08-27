@@ -10,7 +10,7 @@ import TalkPage from './components/TalkPage/TalkPage'
 // import Speakers from './pages/Speakers';
 // import Talks from './pages/Talks';
 import Blogs from './components/Blogs/Blogs';
-// import Sponsors from './pages/Sponsors';
+import Sponsors from './components/Sponsors/Sponsors';
 import Team from './components/Team/Team';
 import './App.css';
 import ReactGA from 'react-ga4';
@@ -34,7 +34,7 @@ function App() {
             <Route path="/" element={<Homepage />} />
             {/* <Route path="/speakers" element={<Speakers />} /> */}
             <Route path="/blogs" element={<Blogs />} />
-            {/* <Route path="/sponsors" element={<Sponsors />} /> */}
+            <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<Team />} />
             <Route path="/talks" element={<TalkPage />} />
