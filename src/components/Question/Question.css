@@ -111,3 +111,26 @@
         display: none;
     }
 }
+
+@media (max-width: 1023px) {
+    .qanda {
+        min-height: 77px;
+        padding: 20px 29px;
+        padding-top: 20px;
+        margin: 30px 75px;
+        border-radius: 20px;
+        background: #2F2F2F;
+    }
+    .answer-img .right-text {
+        margin-left: 0px;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+}

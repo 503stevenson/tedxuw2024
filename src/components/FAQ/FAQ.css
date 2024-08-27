@@ -34,8 +34,43 @@
 }
 
 @media (min-width: 1024px) {
-    .faq-content .questions .qanda {
+    /* .faq-content .questions .qanda {
         margin-left: 10%;
         margin-right: 10%;
+    } */
+}
+
+@media (max-width: 1023px) {
+    .faq-content {
+        background: url('../../images/GleamingStarsMobile.svg') no-repeat center center;
+        width: 100vw;
+        min-height: 100vh;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: top center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 0px 30px;
+        padding-bottom: 50px;
     }
+    .faq-content .title {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        /* 133.333% */
+        letter-spacing: -0.84px;
+        text-transform: capitalize;
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 767px) {    
+    
 }

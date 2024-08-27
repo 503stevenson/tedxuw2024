@@ -1,4 +1,3 @@
-
 .sponsors-content {
     background-image: url('../../assets/FAQ-desktop-frame.svg');
     width: 100vw;
@@ -11,7 +10,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .sponsors-content .title {
@@ -24,9 +23,158 @@
     line-height: 102px;
     letter-spacing: -1.8px;
     text-transform: capitalize;
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 
-@media (min-width: 1024px) {
+.plat-sponsors,
+.gold-sponsors,
+.silver-sponsors,
+.bronze-sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 30px;
+}
 
+.silver-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-tier {
+    color: #EB0028;
+    text-align: center;
+    font-feature-settings: 'calt' off;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    /* 100% */
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.plat-sponsors img {
+    height: 220px; 
+    width: auto; 
+}
+
+.gold-sponsors img {
+    height: 170px; 
+    width: auto; 
+}
+
+.silver-sponsors img {
+    height: 130px; 
+    width: auto; 
+    margin: 0 10px;
+}
+
+.bronze-sponsors img {
+    height: 100px; 
+    width: auto; 
+}
+
+@media (max-width: 1023px) {
+    .sponsors-content .title {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        /* 133.333% */
+        letter-spacing: -0.84px;
+        text-transform: capitalize;
+        padding: 30px 0;
+    }
+    .silver-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }    
+    
+}
+
+@media (max-width: 767px) {    
+    .sponsors-content {
+        background: url('../../images/GleamingStarsMobile.svg') no-repeat center center;
+        width: 100vw;
+        min-height: 100vh;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: top center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 0px 30px;
+        padding-bottom: 50px;
+    }
+    
+    .plat-sponsors img {
+        height: auto; 
+        width: 450px; 
+    }
+    
+    .gold-sponsors img {
+        height: auto;
+        width: 300px; 
+    }
+    
+    .silver-sponsors img {
+        height: auto; 
+        width: 230px;
+        margin: 5px 0;
+    }
+    
+    .bronze-sponsors img {
+        height: auto; 
+        width: 180px;
+    }
+}
+
+@media (max-width: 500px) {  
+    .sponsor-tier {
+        color: #EB0028;
+        text-align: center;
+        font-feature-settings: 'calt' off;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        /* 100% */
+        letter-spacing: -1px;
+        margin-bottom: 15px;
+    }
+
+    .plat-sponsors img {
+        height: auto; 
+        width: 300px; 
+    }
+    
+    .gold-sponsors img {
+        height: auto;
+        width: 200px; 
+    }
+    
+    .silver-sponsors img {
+        height: auto; 
+        width: 200px;
+        margin: 5px 0;
+    }
+    
+    .bronze-sponsors img {
+        height: auto; 
+        width: 150px;
+    }
 }
