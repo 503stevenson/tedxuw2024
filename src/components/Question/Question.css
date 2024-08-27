@@ -1,6 +1,7 @@
 .qanda {
     min-height: 77px;
-    padding: 20px 29px;
+    padding: 0px 29px;
+    padding-top: 20px;
     margin: 30px 75px;
     border-radius: 20px;
     background: #2F2F2F;
@@ -39,7 +40,18 @@
 
 .qanda.open .answer {
     padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+}
+
+.qanda.open .answer ul li {
+    margin-bottom: 10px;
+}
+
+.qanda.open .answer {
+    padding-left: 5px;
     padding-right: 35px;
+    padding-bottom: 20px;
     display: block;
     color: #FFF;
     font-family: Inter;
@@ -49,6 +61,53 @@
     line-height: normal;
 }
 
-.qanda.open .answer ul li {
-    margin-bottom: 10px;
+.answer-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.answer-img .right-text {
+    margin-left: 40px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.answer-img .left-text {
+    margin-right: 30px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.left-image {
+    height: 172px;
+    width: auto;
+    align-self: flex-end;
+}
+
+.right-image {
+    height: 231px;
+    width: auto;
+    align-self: flex-end;
+}
+
+@media (max-width: 1024px) {
+    .left-image,
+    .right-image {
+        display: none;
+    }
 }
