@@ -1,0 +1,156 @@
+.team {
+    width: 100%;
+    background: linear-gradient(0deg, #000 0%, #2A2A2A 90%, #000 100%);
+    position: relative;
+}
+
+.background {
+    width: 100%;
+    height: 85vh;
+    background: url('../../images/GleamingStars.svg') center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.mobilebackground {
+    width: 100%;
+    height: 85vh;
+    background: url('../../images/GleamingStarsMobile.svg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.desktopclouds {
+    width: 100%;
+    height: 85vh;
+    background: url('../../images/DesktopClouds.svg') center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.title {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -1.8px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes moveRightToLeft {
+    from { right: -5%; }
+    to { right: 105%; }
+}
+
+@keyframes moveRightToLeft2 {
+    from { right: -0%; }
+    to { right: 100%; }
+}
+
+@keyframes moveLeftToRight {
+    from { left: 0%; }
+    to { left: 100%; }
+}
+
+@keyframes moveLeftToRight2 {
+    from { left: 10%; }
+    to { left: 105%; }
+}
+
+.clouds {
+    top: 0;
+    pointer-events: none;
+}
+
+.cloud {
+    position: absolute;
+    opacity: 0.6; 
+}
+
+.cloud1 {
+    width: 10vw;
+    top: 20px; 
+    animation: moveLeftToRight 120s linear infinite; 
+}
+
+.cloud2 {
+    width: 15vw;
+    top: 30px; 
+    animation: moveLeftToRight2 120s linear infinite; 
+}
+
+.cloud3 {
+    top: 240px; 
+    animation: moveRightToLeft 80s linear infinite; 
+}
+
+.cloud4 {
+    top: 255px; 
+    animation: moveRightToLeft2 80s linear infinite; 
+}
+
+.speakerList {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 1100px) {
+    .background {
+        display: none;
+    }
+
+    .title {
+        font-size: 55px;
+    }
+
+    .mobilebackground {
+        display: block;
+    }
+
+    .desktopclouds {
+        display: none;
+    }
+
+    .cloud1 {
+        width: 30vw;
+        top: 20px; 
+        animation: moveLeftToRight 120s linear infinite; 
+    }
+    
+    .cloud2 {
+        width: 40vw;
+        top: 30px; 
+        animation: moveLeftToRight2 120s linear infinite; 
+    }
+}
+
+@media (max-width: 800px){
+    .speakerList {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}

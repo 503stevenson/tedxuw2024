@@ -7,7 +7,7 @@ import Homepage from './components/Homepage/Homepage';
 import Footer from './components/Footer/Footer';
 import FAQ from './components/FAQ/FAQ';
 import TalkPage from './components/TalkPage/TalkPage'
-// import Speakers from './pages/Speakers';
+import Speakers from './components/Speakers/Speakers';
 // import Talks from './pages/Talks';
 import Blogs from './components/Blogs/Blogs';
 import Sponsors from './components/Sponsors/Sponsors';
@@ -32,7 +32,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Homepage />} />
-            {/* <Route path="/speakers" element={<Speakers />} /> */}
+            <Route path="/speakers" element={<Speakers />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/faq" element={<FAQ />} />
