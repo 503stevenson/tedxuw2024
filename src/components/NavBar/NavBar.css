@@ -64,6 +64,10 @@
   text-decoration-thickness: 3px;
 }
 
+.navbar-links .navbar-tabs .ticket-form {
+  color: #ff2b06; 
+}
+
 .navbar-links .social-icons {
   display: flex;
   gap: 2.5rem;

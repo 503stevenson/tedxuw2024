@@ -41,6 +41,10 @@
     text-decoration-thickness: 3px;
 }
 
+.sidebar-links .ticket-form {
+    color: #ff2b06; 
+  }
+
 .sidebar-logo {
     position: absolute;
     bottom: 15px;
