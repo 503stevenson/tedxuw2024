@@ -22,6 +22,10 @@ import bullfrogpowered from './sponsor_bullfrogpowered.svg'
 import CIGI from './sponsor_CIGI.svg'
 import Extempra from './sponsor_Extempra.svg'
 import WUSA from  './WUSA_sponsor.svg'
+import Fantuan from './Fantuan_gold.webp'
+import AFEF from './AFEF_silver.webp'
+import MEF from './MEF_diamond.webp'
+import Riptide from './Riptide_plat.webp'
 import plat_star from './sponsor_plat_single_star.svg'
 import gold_stars from './sponsor_gold_star_trio.svg'
 import silver_stars from './sponsor_silver_star_duo.svg'
@@ -51,6 +55,10 @@ export {
     CIGI,
     Extempra,
     WUSA,
+    MEF,
+    Riptide,
+    Fantuan,
+    AFEF,
     plat_star,
     gold_stars,
     silver_stars
