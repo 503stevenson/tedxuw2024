@@ -9,7 +9,7 @@
     display: none
 }
 
-.profile-pic {
+.speaker-profile-pic {
     width: 25vw;
     height: 25vw;
     border-radius: 50%;
@@ -33,7 +33,7 @@
     animation: fadeIn 1s forwards;
 }
 
-.image-container {
+.speaker-image-container {
     z-index: 1000;
     display: flex;
     flex-direction: row;
@@ -67,12 +67,12 @@
         width: 75%;
     }
 
-    .image-container {
+    .speaker-image-container {
         float: left;
         justify-content: center;
     }
 
-    .profile-pic {
+    .speaker-profile-pic {
         width: 40vw;
         height: 40vw;
     }
@@ -92,7 +92,7 @@
 }
 
 @media (max-width: 500px) {
-    .profile-pic {
+    .speaker-profile-pic {
         width: 50vw;
         height: 50vw;
         margin-right: 15px;
