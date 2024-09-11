@@ -25,12 +25,12 @@ const Sponsors = () => {
         <p className='sponsor-tier'>Diamond Sponsors</p>
         <div className='silver-images'>
           <img src={MEF} alt="MEF logo" />
+          <img src={Extempra} alt="Extempra logo" />
         </div>
       </div>
       <div className='plat-sponsors'>
         <p className='sponsor-tier'>Platinum Sponsors</p>
         <div className='silver-images'>
-          <img src={Extempra} alt="Extempra logo" />
           <img src={Riptide} alt="Riptide logo" />
         </div>
       </div>
@@ -46,6 +46,7 @@ const Sponsors = () => {
         <div className='silver-images'>
           <img src={AEF} alt="AEF logo" />
           <img src={WUSA} alt="WUSA logo" />
+          <img src={AFEF} alt="AFEF logo" />
         </div>
       </div>
       <div className='bronze-sponsors'>
