@@ -29,7 +29,7 @@ const NavBar = ({ isOpen, toggleMenu }) => {
       </div>
       <div className={`navbar-links ${isOpen ? "open" : ""}`}>
         <div className='navbar-tabs'>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOE8SfN7DiN9H3JzJAxzNXwtb8YrzqDqCXZh4IZ-IkEJMobQ/viewform" target="_blank" rel="noopener noreferrer" className="ticket-form">BUY TICKETS</a>
+          <NavLink to="/buy-now" onClick={toggleMenu} className={({ isActive }) => isActive ? 'active-link' : ''}>Buy Tickets</NavLink>
           <NavLink to="/speakers" onClick={toggleMenu} className={({ isActive }) => isActive ? 'active-link' : ''}>Speakers</NavLink>
           <NavLink to="/talks" onClick={toggleMenu} className={({ isActive }) => isActive ? 'active-link' : ''}>Talks</NavLink>
           <NavLink to="/blogs" onClick={toggleMenu} className={({ isActive }) => isActive ? 'active-link' : ''}>Blogs</NavLink>
