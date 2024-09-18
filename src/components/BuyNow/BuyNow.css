@@ -5,6 +5,14 @@
     text-align: center; /* Optional: center the text */
 }
 
+.buy-now-page p {
+    color: white; /* This will make only the h1 element white */
+    margin-bottom: 20px;
+    text-align: center; /* Optional: center the text */
+    justify-content: center;
+    align-items: center;
+}
+
 .buy-now-content {
     background-image: url('../../assets/FAQ-desktop-frame.svg');
     width: 100vw;
