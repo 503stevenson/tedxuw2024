@@ -152,7 +152,7 @@ const Homepage = () => {
                         <div className='col2stats'>
                             <div className="row-stat-block speakercount" style={{paddingTop: "2vw", paddingBottom: "2vw"}} ref={speakerRef}>
                                 <div className="stat-number7" style={{marginRight: "2vw"}}>7</div>
-                                <div className="stat-label">Fantastic TED Speakers</div>
+                                <div className="stat-label">Fantastic TEDx Speakers</div>
                             </div>
                             <div className="row-stat-block organizercount" style={{marginTop: "1vw", marginBottom: "1vw", paddingRight: "2vw", paddingBottom: "2vw", paddingTop: "2vw"}} ref={organizerRef}>
                                 <div className="stat-number25" style={{marginRight: "2vw"}}>25</div>
