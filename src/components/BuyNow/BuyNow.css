@@ -1,0 +1,123 @@
+.buy-now-page h1 {
+    color: white; /* This will make only the h1 element white */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center; /* Optional: center the text */
+}
+
+.buy-now-content {
+    background-image: url('../../assets/FAQ-desktop-frame.svg');
+    width: 100vw;
+    min-height: 100vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.buy-now-content .title {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 102px;
+    letter-spacing: -1.8px;
+    text-transform: capitalize;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.pricing-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 30px;
+}
+
+.pricing-tier {
+    color: #EB0028;
+    text-align: center;
+    font-feature-settings: 'calt' off;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+}
+
+/* You can adjust the size of your pricing table's container as per your needs */
+.pricing-table-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media (max-width: 1023px) {
+    .buy-now-content .title {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -0.84px;
+        text-transform: capitalize;
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .buy-now-content {
+        background: url('../../images/GleamingStarsMobile.svg') no-repeat center center;
+        width: 100vw;
+        min-height: 100vh;
+        background-size: 100% auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 0px 30px;
+        padding-bottom: 50px;
+    }
+
+    .pricing-table-container {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .pricing-tier {
+        color: #EB0028;
+        text-align: center;
+        font-feature-settings: 'calt' off;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: -1px;
+        margin-bottom: 15px;
+    }
+
+    .pricing-table-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
