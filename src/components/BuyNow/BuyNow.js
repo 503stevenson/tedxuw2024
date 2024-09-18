@@ -48,6 +48,11 @@ const BuyNow = () => {
     return (
         <div className="buy-now-page">
             <h1>Buy Your Tickets</h1>
+            <p>Tickets are only open to current University of Waterloo students.</p>
+            <p>
+                Please note that payments are non-refundable. Spots are limited! 
+                Please act swiftly if you wish to be part of this experience.
+            </p>
             <div ref={stripeTableRef} /> {/* Stripe pricing table will be injected here */}
         </div>
     );
