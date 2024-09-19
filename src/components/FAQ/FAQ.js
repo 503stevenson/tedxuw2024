@@ -10,11 +10,11 @@ const FAQ = () => {
             FAQS
         </p>
         <div className='questions'>
-            <Question question="Where and when is TEDxUW 2023 happening?" 
+            <Question question="Where and when is TEDxUW 2024 happening?" 
             answer="The TEDxUW 2024 conference will be happening on October 6, 2024 from 9AM - 5PM EST! The conference will be taking place at the University of Waterloo Theatre of the Arts.  Register to secure your spot today!"
             img={faq1} position="right" altText="TEDx speaker picture"/>
             <Question question="Will this year’s conference be in person or virtual?" 
-            answer="This year’s conference will be in-person! The TEDxUW 2023 conference will be taking place at the University of Waterloo Theatre of the Arts. This is located at the University of Waterloo, Ring Rd, Waterloo, ON N2L 3G1."
+            answer="This year’s conference will be in-person! The TEDxUW 2024 conference will be taking place at the University of Waterloo Theatre of the Arts. This is located at the University of Waterloo, Ring Rd, Waterloo, ON N2L 3G1."
             img={faq2} position="right" altText="TEDx group photo"/>
             <Question question="What’s the event breakdown of TEDxUW?" 
             answer="A TEDxUW conference is a local gathering where live TED-like presentations are shared with a community. These conferences consist of talks from outstanding speakers and performers, and also include fun activities the audience can engage in. The theme for TEDxUW 2024 is: In The Odd Chance. Through this year’s theme, we celebrate the courage of embracing what is uncomfortable strategically to meet challenges head-on and unlock our full potential."
