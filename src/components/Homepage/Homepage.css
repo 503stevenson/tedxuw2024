@@ -553,3 +553,27 @@
         background: url('../../images/GleamingStarsMobile.svg') center center;
     }
 }
+
+.buy-now-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #ff4747; /* Bright red */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; /* Makes the button round */
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Ensures the pointer cursor on hover */
+    z-index: 10; /* Ensures button is on top of other elements */
+}
+
+.buy-now-button:hover {
+    background-color: #cc3838; /* Darker red on hover */
+}
+
+.buy-now-button:active {
+    background-color: #a62626; /* Even darker red when clicked */
+}

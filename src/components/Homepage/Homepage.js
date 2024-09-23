@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom'; // Import Link for routing
 import "./Homepage.css";
-import { TEDxLogo, Cloud, Cloud2, Cloud3 } from '../../assets';
+import { Cloud, Cloud2, Cloud3 } from '../../assets';
 import Lottie from 'react-lottie';
 import shootingstar from './StarExplode.json';
 import GrayWaves from '../../images/GrayWaves.svg';
@@ -102,7 +103,10 @@ const Homepage = () => {
                                 <p>🕒 9:30 AM - 6:00 PM</p>
                             </div>
                             <p>📍 Theatre of the Arts, University of Waterloo</p>
-                            <img src={TEDxLogo} alt="TEDx Logo" className="tedxLogo"></img>
+                            {/* Replaced TEDx logo with Buy Now button */}
+                            <Link to="/buy-now" className="buy-now-button">
+                                BUY TICKETS NOW
+                            </Link>
                         </div>
                     </div>
                 </div>

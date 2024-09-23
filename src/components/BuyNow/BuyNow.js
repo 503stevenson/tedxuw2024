@@ -8,7 +8,7 @@ const BuyNow = () => {
 
     // Calculate the time remaining until the ticket sales close (23rd September)
     const calculateTimeLeft = () => {
-        const saleEndDate = new Date("2024-09-23T00:00:00").getTime(); // Set the end date to September 23rd, 2024
+        const saleEndDate = new Date("2024-09-24T00:00:00").getTime(); // Set the end date to September 23rd, 2024
         const now = new Date().getTime();
         const difference = saleEndDate - now;
 
