@@ -8,7 +8,7 @@ const BuyNow = () => {
 
     // Calculate the time remaining until the ticket sales close (23rd September)
     const calculateTimeLeft = () => {
-        const saleEndDate = new Date("2024-09-26T00:00:00").getTime(); // Set the end date to September 23rd, 2024
+        const saleEndDate = new Date("2024-09-24T00:00:00").getTime(); // Set the end date to September 23rd, 2024
         const now = new Date().getTime();
         const difference = saleEndDate - now;
 
@@ -84,7 +84,7 @@ const BuyNow = () => {
             <p>Tickets are only open to current University of Waterloo students.</p>
             <p>Please note that payments are non-refundable. Spots are limited! Please act swiftly if you wish to be part of this experience.</p>
 
-            <div ref={stripeTableRef} className="stripe-pricing-table" /> {/* Stripe pricing table will be injected here */}
+            <h1 className = "closed_sales">Ticket Sales Are Now Closed</h1>
         </div>
     );
 };

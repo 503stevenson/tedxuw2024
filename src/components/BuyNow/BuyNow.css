@@ -39,6 +39,13 @@
     color: #ff4747; /* Use a standout color for the heading */
 }
 
+.closed_sales h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff4747; /* Use a standout color for the heading */
+}
+
+
 .time-left {
     display: flex;
     justify-content: center;
