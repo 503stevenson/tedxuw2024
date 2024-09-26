@@ -103,10 +103,6 @@ const Homepage = () => {
                                 <p>🕒 9:30 AM - 6:00 PM</p>
                             </div>
                             <p>📍 Theatre of the Arts, University of Waterloo</p>
-                            {/* Replaced TEDx logo with Buy Now button */}
-                            <Link to="/buy-now" className="buy-now-button">
-                                BUY TICKETS NOW
-                            </Link>
                         </div>
                     </div>
                 </div>
