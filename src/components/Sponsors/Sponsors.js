@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import './Sponsors.css';
 import {
   AEF,
@@ -12,18 +12,17 @@ import {
   AFEF,
   Riptide,
   MEF,
-  Fantuan
+  Fantuan,
 } from '../../assets/index';
+import ACCOMMOD8U_Logo from '../../assets/ACCOMMOD8U_Logo.png';
 
 const Sponsors = () => {
   return (
     <div className="sponsors-content">
-      <p className="title">
-        SPONSORS
-      </p>
-      <div className='diamond-sponsors'>
-        <p className='sponsor-tier'>Diamond Sponsors</p>
-        <div className='silver-images'>
+      <p className="title">SPONSORS</p>
+      <div className="diamond-sponsors">
+        <p className="sponsor-tier">Diamond Sponsors</p>
+        <div className="silver-images">
           <a href="https://uwaterloo.ca/math-endowment-fund/" target="_blank" rel="noopener noreferrer">
             <img src={MEF} alt="MEF logo" />
           </a>
@@ -32,28 +31,38 @@ const Sponsors = () => {
           </a>
         </div>
       </div>
-      <div className='plat-sponsors'>
-        <p className='sponsor-tier'>Platinum Sponsors</p>
-        <div className='silver-images'>
+
+      <div className="plat-sponsors">
+        <p className="sponsor-tier">Platinum Sponsors</p>
+        <div className="silver-images">
           <a href="http://riptidecreative.ca/" target="_blank" rel="noopener noreferrer">
             <img src={Riptide} alt="Riptide logo" />
           </a>
         </div>
       </div>
-      <div className='gold-sponsors'>
-        <p className='sponsor-tier'>Gold Sponsors</p>
-        <div className='silver-images'>
-          <a href="https://www.cigionline.org/" target="_blank" rel="noopener noreferrer">
-            <img src={CIGI} alt="Centre for International Governance Innovation logo" />
-          </a>
-          <a href="https://fantuan.ca/delivery/en/" target="_blank" rel="noopener noreferrer">
-            <img src={Fantuan} alt="Fantuan logo" />
-          </a>
+
+      <div className="gold-sponsors">
+        <p className="sponsor-tier">Gold Sponsors</p>
+        <div className="gold-logos">
+          <div className="top-logos">
+            <a href="https://www.cigionline.org/" target="_blank" rel="noopener noreferrer">
+              <img src={CIGI} alt="Centre for International Governance Innovation logo" />
+            </a>
+            <a href="https://fantuan.ca/delivery/en/" target="_blank" rel="noopener noreferrer">
+              <img src={Fantuan} alt="Fantuan logo" />
+            </a>
+          </div>
+          <div className="bottom-logo">
+            <a href="https://www.accommod8u.com/" target="_blank" rel="noopener noreferrer">
+              <img className="accommod8u-logo" src={ACCOMMOD8U_Logo} alt="Accommod8u logo" />
+            </a>
+          </div>
         </div>
       </div>
-      <div className='silver-sponsors'>
-        <p className='sponsor-tier'>Silver Sponsors</p>
-        <div className='silver-images'>
+
+      <div className="silver-sponsors">
+        <p className="sponsor-tier">Silver Sponsors</p>
+        <div className="silver-images">
           <a href="https://uwaterloo.ca/arts-endowment-fund/" target="_blank" rel="noopener noreferrer">
             <img src={AEF} alt="AEF logo" />
           </a>
@@ -65,9 +74,10 @@ const Sponsors = () => {
           </a>
         </div>
       </div>
-      <div className='bronze-sponsors'>
-        <p className='sponsor-tier'>Bronze Sponsors</p>
-        <div className='silver-images'>
+
+      <div className="bronze-sponsors">
+        <p className="sponsor-tier">Bronze Sponsors</p>
+        <div className="silver-images">
           <a href="https://bullfrogpower.com/" target="_blank" rel="noopener noreferrer">
             <img src={bullfrogpowered} alt="bullfrogpowered logo" />
           </a>
@@ -75,6 +85,6 @@ const Sponsors = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Sponsors;

@@ -189,3 +189,15 @@
         width: 150px;
     }
 }
+
+.top-logos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+.bottom-logo {
+    margin-top: 10px;
+}
+  
+
