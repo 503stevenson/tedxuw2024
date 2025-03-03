@@ -18,15 +18,6 @@ const Homepage = () => {
         title: "Home"
     });
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        // Force a repaint by reading the offsetHeight of the button
-        const btn = document.querySelector('.watch');
-        if (btn) {
-            void btn.offsetHeight;
-        }
-    }, []);
-
     const [animationFinished, setAnimationFinished] = useState(false);
 
     const handleClick = () => {
@@ -89,7 +80,7 @@ const Homepage = () => {
     return (
         <>
             <div className="wrapper">
-            {!animationFinished &&
+            {/* {!animationFinished &&
                 <Lottie 
                     options={defaultOptions}
                     className="lottie-animation"
@@ -100,7 +91,7 @@ const Homepage = () => {
                     },
                     ]}
                 />
-            }
+            } */}
 
 
 

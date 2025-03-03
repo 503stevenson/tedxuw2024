@@ -353,8 +353,10 @@
     animation: fadeIn 2s ease-out forwards;
     animation-delay: 1.25s;
     opacity: 0;
-    z-index: 999;
+    position: relative; /* Added */
+    z-index: 1010;      /* Added, higher than graywaves z-index of 1000 */
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -593,7 +595,6 @@
     cursor: pointer; /* Ensures the pointer cursor on hover */
     z-index: 10; /* Ensures button is on top of other elements */
 }
-
 .lottie-animation {
     position: absolute;
     z-index: 100000;
