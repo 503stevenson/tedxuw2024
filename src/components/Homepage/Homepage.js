@@ -17,7 +17,22 @@ const Homepage = () => {
         page: "",
         title: "Home"
     });
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        // Force a repaint by reading the offsetHeight of the button
+        const btn = document.querySelector('.watch');
+        if (btn) {
+            void btn.offsetHeight;
+        }
+    }, []);
+
     const [animationFinished, setAnimationFinished] = useState(false);
+
+    const handleClick = () => {
+        console.log('Button clicked');
+        window.open('https://www.youtube.com/playlist?list=PLcteTzYN3---_W_OkPV02B-9zgnRZe52V', '_blank');
+    };
 
     const defaultOptions = {
         loop: false,
@@ -74,17 +89,20 @@ const Homepage = () => {
     return (
         <>
             <div className="wrapper">
-                {!animationFinished &&
-                    <Lottie options={defaultOptions}
-                        style={{position: 'absolute', zIndex: 100000, top: -100, left: 0, width: '100%', height: '100vh'}}
-                        eventListeners={[
-                            {
-                                eventName: 'complete',
-                                callback: () => { setAnimationFinished(true) }
-                            },
-                        ]}
-                    />
-                }
+            {!animationFinished &&
+                <Lottie 
+                    options={defaultOptions}
+                    className="lottie-animation"
+                    eventListeners={[
+                    {
+                        eventName: 'complete',
+                        callback: () => { setAnimationFinished(true); }
+                    },
+                    ]}
+                />
+            }
+
+
 
                 <div className="background"></div>
                 <div className="background2"></div>
@@ -103,6 +121,14 @@ const Homepage = () => {
                                 <p>🕒 9:30 AM - 6:00 PM</p>
                             </div>
                             <p>📍 Theatre of the Arts, University of Waterloo</p>
+                            <button 
+                                className="watch"  
+                                onClick={handleClick}
+                                style={{ position: 'relative', zIndex: 100001 }} // Ensures the button is above the overlay
+                            >
+                                Watch the Talks!
+                            </button>
+
                         </div>
                     </div>
                 </div>
